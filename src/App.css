@@ -1,19 +1,25 @@
 .app-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 800px;
 }
 
 .input-section {
-  width: 40%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 10px;
   padding: 10px;
   background-color: lightgray;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  height: 500px;
 }
 
 .input-field {
-  width: 100%;
+  width: 80%;
   padding: 5px;
   margin: 5px 0;
   font-size: 16px;
@@ -21,8 +27,22 @@
   border-radius: 5px;
 }
 
-.save-button {
+.select-field {
+  width: 85%;
+  padding: 2px;
+  margin: 5px 0;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.radios-container {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.save-button {
+  width: 80%;
   padding: 5px;
   margin: 5px 0;
   background-color: lightblue;
@@ -34,7 +54,7 @@
 }
 
 .contacts-section {
-  width: 40%;
+  width: 30%;
   margin: 10px;
   padding: 10px;
   background-color: lightgray;
@@ -46,18 +66,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-height: 400px;
 }
 
 .contact-card {
-  width: 300px;
-  height: 150px;
+  width: 200px;
+  height: 50px;
   margin: 10px;
   padding: 10px;
   background-color: lightblue;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .contact-name {

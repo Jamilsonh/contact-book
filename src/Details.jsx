@@ -31,7 +31,10 @@ const Details = () => {
               </div>
               <div> 
                 {filter.email}
-              </div>   
+              </div>
+              <div>
+                {filter.genre}  
+              </div>  
             </div>
           )}
           <button>

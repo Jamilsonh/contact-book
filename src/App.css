@@ -3,10 +3,11 @@
   justify-content: center;
   align-items: center;
   height: 800px;
+  flex-direction: column;
 }
 
 .input-section {
-  width: 30%;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,41 +17,6 @@
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   height: 500px;
-}
-
-.input-field {
-  width: 80%;
-  padding: 5px;
-  margin: 5px 0;
-  font-size: 16px;
-  border: 1px solid gray;
-  border-radius: 5px;
-}
-
-.select-field {
-  width: 85%;
-  padding: 2px;
-  margin: 5px 0;
-  font-size: 15px;
-  border-radius: 5px;
-}
-
-.radios-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.save-button {
-  width: 80%;
-  padding: 5px;
-  margin: 5px 0;
-  background-color: lightblue;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
 }
 
 .contacts-section {
@@ -70,8 +36,7 @@
 }
 
 .contact-card {
-  width: 200px;
-  height: 50px;
+  width: 250px;
   margin: 10px;
   padding: 10px;
   background-color: lightblue;
@@ -79,15 +44,31 @@
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   text-align: center;
   color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact-name {
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 15px;
+  margin: 2px;
+  display: flex;
 }
 
 .contact-email {
   font-size: 16px;
 }
+
+.first-name {
+  margin: 3px;
+}
+
+.last-name {
+  margin: 3px;
+}
+
+
+
+
+
 
 

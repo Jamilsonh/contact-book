@@ -1,0 +1,93 @@
+.input-section {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  height: 400px;
+}
+
+.bar-container {
+  background: white;
+  border: 1px solid #999;
+  width: 85%;
+  height: 12px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+  
+.bar {
+  background: #535bf2;
+  width: 100px;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.seta {
+  justify-content: flex-start;
+  width: 85%;
+}
+
+.react-icons {
+  color: rgb(182, 74, 74);
+  size: 2em;
+}
+
+.input-field {
+  width: 80%;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.select-field {
+  width: 85%;
+  padding: 2px;
+  margin: 10px 0;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.form-group {
+  width: 250px;
+}
+
+.radios-container {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-around;
+  color: black;
+}
+
+.radios-container input {
+  margin-right: 10px;
+}
+
+.save-button {
+  width: 80%;
+  padding: 5px;
+  margin: 5px 0;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save-button:disabled {
+  color: rgba(0, 0, 0, 0.418);
+  background-color: rgba(125, 137, 141, 0.733);
+}
+
+.disabled-link {
+  pointer-events: none;
+}

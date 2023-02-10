@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Login.css'
 
-const AddContact = () => {
+const Rascunho = () => {
   return (
     <div>
       <div className='login-box'>
         <h2>Login</h2>
         <form>
-          <div class="user-box">
+          <div className="user-box">
             <input 
               type="text"
               name=""
@@ -15,7 +15,7 @@ const AddContact = () => {
             />
             <label>Username</label>
           </div>
-          <div class="user-box">
+          <div className="user-box">
             <input
               type="password"
               name=""
@@ -36,4 +36,4 @@ const AddContact = () => {
   );
 };
 
-export default AddContact;
+export default Rascunho;

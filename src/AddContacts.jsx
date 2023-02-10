@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { VscArrowLeft } from "react-icons/vsc";
 import './App.css'
 import './AddContacts.css'
+import './Select.css'
 import { IconContext } from 'react-icons';
 
 const Contacts = () => {
@@ -83,9 +84,9 @@ const Contacts = () => {
           <IconContext.Provider 
             value={{ className:'react-icons' , size: '1.5em'}}
           >
-            <a href="/">
+            <Link to="/">
               <VscArrowLeft/>
-            </a>
+            </Link>
           </IconContext.Provider> 
         </div> 
         <input
@@ -163,10 +164,8 @@ const Contacts = () => {
           onClick={handleSave} 
           disabled={calculateProgress() !== 100.02000000000001}
         >
-          <Link to='/' >
-            Salvar 
-          </Link>
-        </button>
+          Salvar
+        </button> 
       </div>
     </div>
   );

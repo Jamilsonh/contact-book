@@ -1,0 +1,107 @@
+.container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 800px;
+}
+
+.sub-container {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  height: 500px;
+}
+
+.buttons {
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.save-button {
+  width: 40%;
+  padding: 5px;
+  margin: 5px 10px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  flex-direction: column;
+}
+
+
+  
+.input-section {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  height: 500px;
+}
+
+.contacts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 400px;
+}
+
+.contact-card {
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightblue;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-name {
+  font-size: 15px;
+  margin: 2px;
+  display: flex;
+}
+
+.first-name {
+  margin: 3px;
+}
+  
+.last-name {
+  margin: 3px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.contacts-list {
+  width: 200px;
+  height: 400px;
+  background-color: blue;
+}

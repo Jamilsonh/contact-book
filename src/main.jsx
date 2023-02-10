@@ -6,6 +6,7 @@ import Contacts from './AddContacts'
 import Details from './Details'
 import './index.css'
 import ListOfContacts from './ListOfContacts'
+import Rascunho from './Rascunho'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/" element={<ListOfContacts />} />
           <Route path="/details/:id" element={<Details />} />
           <Route path="/addcontact" element={<Contacts />} />
+          <Route path="/test" element={<Rascunho />} />
         </Route>
       </Routes> 
     </BrowserRouter>

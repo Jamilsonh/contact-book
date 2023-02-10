@@ -18,8 +18,29 @@ const ListOfContacts = ( ) => {
   }, []);
 
   return (
-    <div className='app-container'> 
-      <div className="input-section">   
+    <div className="container-main"> 
+      <div className="sub-container">  
+        <div className='buttons'>
+          <button
+            className="save-button"    
+          >
+            <Link
+              className='link' 
+              to={'/addcontact'}
+            >
+              Add Contact
+            </Link>            
+          </button>
+          <button 
+            className="save-button" 
+            onClick={limparStorage}
+          >
+            Clear Contacts
+          </button>
+        </div>
+        <div className='contacts-list'>
+
+        
         {contacts.map((item, index) => (
           <div 
             key={index}
@@ -41,16 +62,8 @@ const ListOfContacts = ( ) => {
             </div>   
               
           </div>
-      ))}
-        <button>
-          <Link to={'/addcontact'}>
-            Adicionar Contato
-          </Link>            
-        </button>
-        <button className="save-button" onClick={limparStorage}>
-          Limpar
-        </button>
-
+        ))}
+        </div>
       </div>  
     </div>
   );

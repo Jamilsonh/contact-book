@@ -38,31 +38,28 @@ const ListOfContacts = ( ) => {
             Clear Contacts
           </button>
         </div>
-        <div className='contacts-list'>
 
-        
-        {contacts.map((item, index) => (
-          <div 
-            key={index}
-          >
-            <div className="contacts-container">
-              <div className="contact-card">
+        <div className='contacts-list'>
+          {contacts.map((item, index) => (
+              <div key={index} className="contacts-card">
                 <div className="contact-name">
                   <div className="first-name">{item.firstName}</div>
                   <div className="last-name">{item.lastName}</div>
                 </div>
                 <div>
-                  <button>
-                    <Link to={`/details/${item.firstName}`}>
+                  <button
+                    className="details-button"
+                  >
+                    <Link 
+                      className='link'
+                      to={`/details/${item.firstName}`
+                    }>
                       Detalhes
                     </Link>
                   </button>   
                 </div>
-              </div>   
-            </div>   
-              
-          </div>
-        ))}
+              </div>                    
+          ))}
         </div>
       </div>  
     </div>

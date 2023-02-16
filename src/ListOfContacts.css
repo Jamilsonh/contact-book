@@ -2,26 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 800px;
 }
 
 .sub-container {
   width: 300px;
+  height: 500px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   margin: 10px;
   padding: 10px;
   background-color: lightgray;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  height: 500px;
 }
 
 .buttons {
   width: 300px;
   height: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -38,47 +39,45 @@
   cursor: pointer;
 }
 
-.app-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
-  flex-direction: column;
-}
-
-
-  
-.input-section {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  background-color: lightgray;
+.save-button:hover {
+  width: 40%;
+  padding: 5px;
+  margin: 5px 10px;
+  background-color: rgb(115, 143, 153);
+  border: none;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  height: 500px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.contacts-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-height: 400px;
+.link {
+  text-decoration: none;
+  color: black;
 }
 
-.contact-card {
+.contacts-list {
   width: 250px;
-  margin: 10px;
-  padding: 10px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contacts-card {
+  width: 85%;
+  height: 40px;
+  margin-top: 10px;
   background-color: lightblue;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   text-align: center;
   color: rgb(0, 0, 0);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .contact-name {
@@ -95,13 +94,39 @@
   margin: 3px;
 }
 
-.link {
-  text-decoration: none;
-  color: black;
+.details-button {
+  width: 100%;
+  background-color: rgb(213, 214, 180);
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.contacts-list {
-  width: 200px;
-  height: 400px;
-  background-color: blue;
+.details-button:hover {
+  background-color: rgb(117, 117, 99);
 }
+  
+/*
+.input-section {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  height: 500px;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  flex-direction: column;
+}
+*/

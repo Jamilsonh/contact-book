@@ -27,16 +27,24 @@ const Details = () => {
           {contacts && (
             <div className='details-card'>  
               <div>
-                {filter.firstName}
-              </div>
-              <div> 
-                {filter.email}
+                Nome: {filter.firstName} {filter.lastName}
               </div>
               <div>
-                {filter.genre}  
+                E-mail: {filter.email}  
               </div>  
+              <div>
+                Marital Status: {filter.maritalStatus}  
+              </div>
+              <div>
+                Work Situation: {filter.workSituation}  
+              </div>
+              <div>
+                Genre: {filter.genre}  
+              </div> 
             </div>
-          )}
+          )}    
+        </div>
+        <div>
           <button>
             <Link to='/'>
               Voltar

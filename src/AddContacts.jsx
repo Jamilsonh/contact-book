@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { VscArrowLeft } from "react-icons/vsc";
 import './App.css'
 import './AddContacts.css'
-import './Select.css'
 import { IconContext } from 'react-icons';
 
 const Contacts = () => {
@@ -72,69 +71,103 @@ const Contacts = () => {
 
   return (
     <div className="app-container">
-      <div className="input-section">
-        <div className='bar-container'>
-          <div
-            className='bar'
-            style={{ width: `${calculateProgress()}%` }}
-          >
+      <div>CONTACT BOOK</div>
+      <div className="addcontacts-container">
+
+        <div className="progressbar-container">
+          <div className="progress-bar">
+            <div
+              className='progress'
+              style={{ width: `${calculateProgress()}%` }}
+            >
+            </div>
           </div>
         </div>
-        <div className='seta'>
-          <IconContext.Provider 
-            value={{ className:'react-icons' , size: '1.5em'}}
-          >
-            <Link to="/">
-              <VscArrowLeft/>
-            </Link>
-          </IconContext.Provider> 
-        </div> 
-        <input
-          className="input-field"
-          type="text"
-          placeholder="First Name"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-        />
-        <input
-          className="input-field"
-          type="text"
-          placeholder="Last Name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-        />
-        <input
-          className="input-field"
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <select
-          className="select-field"
-          name="status"
-          value={maritalStatus}
-          onChange={(e) => setMaritalStatus(e.target.value)}
-        >
-          <option value=''> - Martial Status...</option>
-          <option value='solteiro'>Solteiro</option>
-          <option value='casado'>Casado</option>
-          <option value='divorciado'>Divorciado</option>
-        </select>
-        <select
-          className="select-field"
-          name="status"
-          value={workSituation}
-          onChange={(e) => setWorkSituation(e.target.value)}
-        >
-          <option value=''> - Work Situation... </option>
-          <option value='Buscando Trabalho'>Buscando Trabalho</option>
-          <option value='Contratado CLT'>Contratado CLT</option>
-          <option value='Contratado PJ'>Contratado PJ</option>
-          <option value='Freelancer'>Freelancer</option>
-        </select>
+        <div className='container-icon'>
+          <div className='arrow-icon'>
+            <IconContext.Provider 
+              value={{ className:'react-icons' , size: '1.5em'}}
+            >
+              <Link to="/">
+                <VscArrowLeft/>
+              </Link>
+            </IconContext.Provider> 
+          </div> 
+        </div>
+        
 
+        <div className='label-container'>
+          <label className='title-labels'>
+            FIRST NAME
+          </label>
+          <input
+            className="login--input"
+            type="text"
+            placeholder=""
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+        </div>
+
+        <div className='label-container'>
+          <div className='title-labels'>
+              LAST NAME
+          </div>
+          <input
+            className="login--input"
+            type="text"
+            placeholder=""
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+        </div>
+
+        <div className='label-container'>
+          <div className='title-labels'>
+            EMAIL
+          </div>
+          <input
+            className="login--input"
+            type="email"
+            placeholder=""
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+
+        <div className='label-container'>
+          <div className='title-labels'>MARITAL STATUS</div>
+          <select
+            className="select-field"
+            name="status"
+            value={maritalStatus}
+            onChange={(e) => setMaritalStatus(e.target.value)}
+          >
+            <option value=''> - Select...</option>
+            <option value='solteiro'>Solteiro</option>
+            <option value='casado'>Casado</option>
+            <option value='divorciado'>Divorciado</option>
+          </select>
+        </div>
+
+        <div className='label-container'>
+          <div className='title-labels'>WORK SITUATION</div>
+          <select
+            className="select-field"
+            name="status"
+            value={workSituation}
+            onChange={(e) => setWorkSituation(e.target.value)}
+          >
+            <option value=''> - Select...</option>
+            <option value='Buscando Trabalho'>Buscando Trabalho</option>
+            <option value='Contratado CLT'>Contratado CLT</option>
+            <option value='Contratado PJ'>Contratado PJ</option>
+            <option value='Freelancer'>Freelancer</option>
+          </select>
+        </div>
+     
         <div className='form-group'>
+          <div className='title-labels'>GENRE</div>
           <div className='radios-container'>
             <span>
               <input 
@@ -144,7 +177,7 @@ const Contacts = () => {
               onChange={(e) => setGenre(e.target.value)}     
               checked={genre === 'masculino'}         
             /> 
-              Masculino
+              Male
             </span>
             <span>
               <input 
@@ -154,18 +187,20 @@ const Contacts = () => {
               onChange={(e) => setGenre(e.target.value)}
               checked={genre === 'feminino'}
             /> 
-              Feminino
+              Female
             </span>
           </div>
         </div>
 
-        <button 
-          className="save-button" 
-          onClick={handleSave} 
-          disabled={calculateProgress() !== 100.02000000000001}
-        >
-          Salvar
-        </button> 
+        <div className='container-button'>
+          <button 
+            className="save-button" 
+            onClick={handleSave} 
+            disabled={calculateProgress() !== 100.02000000000001}
+          >
+            Salvar
+          </button> 
+        </div>
       </div>
     </div>
   );

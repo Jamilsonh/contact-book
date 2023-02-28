@@ -22,6 +22,7 @@ const Details = () => {
 
   return (
     <div className='details-container'>
+      <div>CONTACT BOOK</div>
       <div className='details-section'>
         <div className='details-subcontainer'>
           {contacts && (

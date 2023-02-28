@@ -19,6 +19,7 @@ const ListOfContacts = ( ) => {
 
   return (
     <div className="container-main"> 
+    <div>CONTACT BOOK</div>
       <div className="sub-container">  
         <div className='buttons'>
           <button
@@ -40,13 +41,16 @@ const ListOfContacts = ( ) => {
         </div>
 
         <div className='contacts-list'>
+          <div className='contacts-title'>
+            Contacts
+          </div>
           {contacts.map((item, index) => (
               <div key={index} className="contacts-card">
                 <div className="contact-name">
                   <div className="first-name">{item.firstName}</div>
                   <div className="last-name">{item.lastName}</div>
                 </div>
-                <div>
+                <div className="contact-button">
                   <button
                     className="details-button"
                   >
@@ -54,7 +58,7 @@ const ListOfContacts = ( ) => {
                       className='link'
                       to={`/details/${item.firstName}`
                     }>
-                      Detalhes
+                      Details
                     </Link>
                   </button>   
                 </div>

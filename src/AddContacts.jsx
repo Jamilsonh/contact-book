@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { VscArrowLeft } from "react-icons/vsc";
-import './App.css'
-import './AddContacts.css'
+import { VscArrowLeft } from 'react-icons/vsc';
+import './App.css';
+import './AddContacts.css';
 import { IconContext } from 'react-icons';
 
 const Contacts = () => {
@@ -12,7 +12,7 @@ const Contacts = () => {
   const [maritalStatus, setMaritalStatus] = useState('');
   const [workSituation, setWorkSituation] = useState('');
   const [genre, setGenre] = useState('');
-  
+
   const [contacts, setContacts] = useState([]);
 
   const calculateProgress = () => {
@@ -26,9 +26,10 @@ const Contacts = () => {
       value += amountToAdd;
     }
     if (email) {
-      let pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      let pattern =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-      if(pattern.test(email)) {
+      if (pattern.test(email)) {
         value += amountToAdd;
       }
     }
@@ -45,7 +46,14 @@ const Contacts = () => {
   };
 
   const handleSave = () => {
-    const newContact = { firstName, lastName, email, maritalStatus, workSituation, genre };
+    const newContact = {
+      firstName,
+      lastName,
+      email,
+      maritalStatus,
+      workSituation,
+      genre,
+    };
     setContacts([...contacts, newContact]);
     localStorage.setItem('contacts', JSON.stringify([...contacts, newContact]));
     setFirstName('');
@@ -57,7 +65,7 @@ const Contacts = () => {
   };
 
   function limparStorage() {
-    localStorage.removeItem('contacts') 
+    localStorage.removeItem('contacts');
     const savedContacts = JSON.parse(localStorage.getItem('contacts')) || [];
     setContacts(savedContacts);
   }
@@ -70,66 +78,57 @@ const Contacts = () => {
   calculateProgress();
 
   return (
-    <div className="app-container">
+    <div className='app-container'>
       <div>CONTACT BOOK</div>
-      <div className="addcontacts-container">
-
-        <div className="progressbar-container">
-          <div className="progress-bar">
+      <div className='addcontacts-container'>
+        <div className='progressbar-container'>
+          <div className='progress-bar'>
             <div
               className='progress'
               style={{ width: `${calculateProgress()}%` }}
-            >
-            </div>
+            ></div>
           </div>
         </div>
         <div className='container-icon'>
           <div className='arrow-icon'>
-            <IconContext.Provider 
-              value={{ className:'react-icons' , size: '1.5em'}}
+            <IconContext.Provider
+              value={{ className: 'react-icons', size: '1.5em' }}
             >
-              <Link to="/">
-                <VscArrowLeft/>
+              <Link to='/'>
+                <VscArrowLeft />
               </Link>
-            </IconContext.Provider> 
-          </div> 
+            </IconContext.Provider>
+          </div>
         </div>
-        
 
         <div className='label-container'>
-          <label className='title-labels'>
-            FIRST NAME
-          </label>
+          <label className='title-labels'>FIRST NAMES</label>
           <input
-            className="login--input"
-            type="text"
-            placeholder=""
+            className='login--input'
+            type='text'
+            placeholder=''
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
           />
         </div>
 
         <div className='label-container'>
-          <div className='title-labels'>
-              LAST NAME
-          </div>
+          <div className='title-labels'>LAST NAME</div>
           <input
-            className="login--input"
-            type="text"
-            placeholder=""
+            className='login--input'
+            type='text'
+            placeholder=''
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
         </div>
 
         <div className='label-container'>
-          <div className='title-labels'>
-            EMAIL
-          </div>
+          <div className='title-labels'>EMAIL</div>
           <input
-            className="login--input"
-            type="email"
-            placeholder=""
+            className='login--input'
+            type='email'
+            placeholder=''
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -138,8 +137,8 @@ const Contacts = () => {
         <div className='label-container'>
           <div className='title-labels'>MARITAL STATUS</div>
           <select
-            className="select-field"
-            name="status"
+            className='select-field'
+            name='status'
             value={maritalStatus}
             onChange={(e) => setMaritalStatus(e.target.value)}
           >
@@ -153,8 +152,8 @@ const Contacts = () => {
         <div className='label-container'>
           <div className='title-labels'>WORK SITUATION</div>
           <select
-            className="select-field"
-            name="status"
+            className='select-field'
+            name='status'
             value={workSituation}
             onChange={(e) => setWorkSituation(e.target.value)}
           >
@@ -165,41 +164,41 @@ const Contacts = () => {
             <option value='Freelancer'>Freelancer</option>
           </select>
         </div>
-     
+
         <div className='form-group'>
           <div className='title-labels'>GENRE</div>
           <div className='radios-container'>
             <span>
-              <input 
-              type='radio' 
-              name='genre' 
-              value="masculino"
-              onChange={(e) => setGenre(e.target.value)}     
-              checked={genre === 'masculino'}         
-            /> 
+              <input
+                type='radio'
+                name='genre'
+                value='masculino'
+                onChange={(e) => setGenre(e.target.value)}
+                checked={genre === 'masculino'}
+              />
               Male
             </span>
             <span>
-              <input 
-              type='radio' 
-              name='genre' 
-              value="feminino" 
-              onChange={(e) => setGenre(e.target.value)}
-              checked={genre === 'feminino'}
-            /> 
+              <input
+                type='radio'
+                name='genre'
+                value='feminino'
+                onChange={(e) => setGenre(e.target.value)}
+                checked={genre === 'feminino'}
+              />
               Female
             </span>
           </div>
         </div>
 
         <div className='container-button'>
-          <button 
-            className="save-button" 
-            onClick={handleSave} 
+          <button
+            className='save-button'
+            onClick={handleSave}
             disabled={calculateProgress() !== 100.02000000000001}
           >
             Salvar
-          </button> 
+          </button>
         </div>
       </div>
     </div>
@@ -207,10 +206,3 @@ const Contacts = () => {
 };
 
 export default Contacts;
-
-
-
-
-
-
-  

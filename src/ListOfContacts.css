@@ -15,60 +15,85 @@
   justify-content: space-around;
   margin: 10px;
   padding: 10px;
-  background-color: lightgray;
   background-image: url(images/fundo.png);
   background-size: cover;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .buttons {
-  width: 300px;
+  width: 410px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.button-link {
+  width: 40%;
+  height: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.button-link:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.button-inlink {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-inlink:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: 2px solid black;
+}
+
 .save-button {
   width: 40%;
-  padding: 5px;
-  margin: 5px 10px;
-  background-color: lightblue;
-  border: none;
-  border-radius: 5px;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
   color: rgb(0, 0, 0);
   font-size: 16px;
   cursor: pointer;
+  margin: 5px;
 }
 
 .save-button:hover {
   width: 40%;
-  padding: 5px;
-  margin: 5px 10px;
-  background-color: rgb(115, 143, 153);
-  border: none;
-  border-radius: 5px;
+  height: 35px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 15px;
   color: rgb(0, 0, 0);
   font-size: 16px;
   cursor: pointer;
 }
 
-.link {
-  text-decoration: none;
-  color: black;
-}
-
 .contacts-list {
-  width: 250px;
-  height: 430px;
+  width: 350px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px;
   border: 1px solid black;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .contacts-title {
@@ -82,72 +107,84 @@
   border-radius: 10px 10px 0px 0px;
 }
 
+.listcontacts-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.contacts-container::-webkit-scrollbar {
+  width: 0.35em;
+  background-color: transparent;
+}
+
+.contacts-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.521);
+  border-radius: 5px;
+}
+
 .contacts-card {
   width: 90%;
   height: 40px;
   margin-top: 10px;
-  background-color: lightblue;
+  background-color: rgb(0, 0, 0);
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .contact-name {
-  width: 80px;
-  font-size: 15px;
+  width: 130px;
+  font-size: 18px;
   margin-left: 5px;
   display: flex;
+  justify-content: center;
 }
 
 .contact-button {
-  width: 70px;
-  margin-right: 5px;
+  width: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.detailsbutton-link {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .first-name {
   margin: 3px;
 }
-  
+
 .last-name {
   margin: 3px;
 }
 
 .details-button {
   width: 100%;
-  background-color: rgb(213, 214, 180);
+  margin: 2px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   color: rgb(0, 0, 0);
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .details-button:hover {
-  background-color: rgb(117, 117, 99);
+  background-color: rgba(255, 255, 255, 0.616);
 }
-  
-/*
-.input-section {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  background-color: lightgray;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  height: 500px;
-}
-
-.app-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 800px;
-  flex-direction: column;
-}
-*/

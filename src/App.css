@@ -15,7 +15,7 @@
   padding: 10px;
   background-color: rgb(53, 40, 40);
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   height: 600px;
 }
 
@@ -25,7 +25,7 @@
   padding: 10px;
   background-color: lightgray;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .contacts-container {
@@ -41,7 +41,7 @@
   padding: 10px;
   background-color: lightblue;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   text-align: center;
   color: rgb(0, 0, 0);
   display: flex;
@@ -65,10 +65,3 @@
 .last-name {
   margin: 3px;
 }
-
-
-
-
-
-
-

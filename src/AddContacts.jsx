@@ -108,7 +108,7 @@ const Contacts = () => {
             type='text'
             placeholder=''
             value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
+            onChange={(e) => setFirstName(e.target.value.trim())}
           />
         </div>
 
@@ -119,7 +119,7 @@ const Contacts = () => {
             type='text'
             placeholder=''
             value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+            onChange={(e) => setLastName(e.target.value.trim())}
           />
         </div>
 
@@ -130,7 +130,7 @@ const Contacts = () => {
             type='email'
             placeholder=''
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value.trim())}
           />
         </div>
 

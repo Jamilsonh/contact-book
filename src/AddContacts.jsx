@@ -192,13 +192,15 @@ const Contacts = () => {
         </div>
 
         <div className='container-button'>
-          <button
-            className='button-formulario'
-            onClick={handleSave}
-            disabled={calculateProgress() !== 100.02000000000001}
-          >
-            SAVE
-          </button>
+          <Link className='btnformulario-link' to={'/'}>
+            <button
+              className='button-formulario'
+              onClick={handleSave}
+              disabled={calculateProgress() !== 100.02000000000001}
+            >
+              SAVE
+            </button>
+          </Link>
         </div>
       </div>
     </div>

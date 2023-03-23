@@ -21,12 +21,24 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
+@media screen and (max-width: 600px) {
+  .details-container {
+    width: 330px;
+  }
+}
+
 .details-subcontainer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 350px;
   height: 800px;
+}
+
+@media screen and (max-width: 600px) {
+  .details-subcontainer {
+    width: 330px;
+  }
 }
 
 .details-card {

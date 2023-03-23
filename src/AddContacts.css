@@ -13,6 +13,12 @@
   height: 600px;
 }
 
+@media screen and (max-width: 600px) {
+  .addcontacts-container {
+    width: 330px;
+  }
+}
+
 .progressbar-container {
   width: 100%;
   display: flex;
@@ -135,11 +141,19 @@
   justify-content: center;
 }
 
-.button-formulario {
+.btnformulario-link {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.button-formulario {
+  width: 100%;
   height: 30px;
   padding: 5px;
-  margin: 5px 0;
   background-color: white;
   border: 1px solid black;
   border-radius: 15px;

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 import './ListOfContacts.css';
+import { VscAdd, VscChromeClose } from 'react-icons/vsc';
+import { IconContext } from 'react-icons';
 
 const ListOfContacts = () => {
   const [contacts, setContacts] = useState([]);
@@ -54,17 +56,28 @@ const ListOfContacts = () => {
                     className='detailsbutton-link'
                     to={`/details/${item.firstName}`}
                   >
-                    <button className='details-button'>Details</button>
+                    <button className='button-icon'>
+                      <IconContext.Provider
+                        value={{ className: 'button-more', size: '1.5em' }}
+                      >
+                        <VscAdd />
+                      </IconContext.Provider>
+                    </button>
                   </Link>
+
                   <button
-                    className='details-button'
+                    className='button-icon'
                     onClick={() => {
                       removerContato({
                         firstName: item.firstName,
                       });
                     }}
                   >
-                    Remover
+                    <IconContext.Provider
+                      value={{ className: 'button-remove', size: '1.5em' }}
+                    >
+                      <VscChromeClose />
+                    </IconContext.Provider>
                   </button>
                 </div>
               </div>

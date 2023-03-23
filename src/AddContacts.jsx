@@ -102,7 +102,7 @@ const Contacts = () => {
         </div>
 
         <div className='label-container'>
-          <label className='title-labels'>FIRST NAMES</label>
+          <label className='title-labels'>FIRST NAME</label>
           <input
             className='login--input'
             type='text'
@@ -143,9 +143,9 @@ const Contacts = () => {
             onChange={(e) => setMaritalStatus(e.target.value)}
           >
             <option value=''> - Select...</option>
-            <option value='solteiro'>Solteiro</option>
-            <option value='casado'>Casado</option>
-            <option value='divorciado'>Divorciado</option>
+            <option value='Solteiro'>Solteiro</option>
+            <option value='Casado'>Casado</option>
+            <option value='Divorciado'>Divorciado</option>
           </select>
         </div>
 
@@ -172,9 +172,9 @@ const Contacts = () => {
               <input
                 type='radio'
                 name='genre'
-                value='masculino'
+                value='Masculino'
                 onChange={(e) => setGenre(e.target.value)}
-                checked={genre === 'masculino'}
+                checked={genre === 'Masculino'}
               />
               Male
             </span>
@@ -182,9 +182,9 @@ const Contacts = () => {
               <input
                 type='radio'
                 name='genre'
-                value='feminino'
+                value='Feminino'
                 onChange={(e) => setGenre(e.target.value)}
-                checked={genre === 'feminino'}
+                checked={genre === 'Feminino'}
               />
               Female
             </span>
@@ -193,11 +193,11 @@ const Contacts = () => {
 
         <div className='container-button'>
           <button
-            className='save-button'
+            className='button-formulario'
             onClick={handleSave}
             disabled={calculateProgress() !== 100.02000000000001}
           >
-            Salvar
+            SAVE
           </button>
         </div>
       </div>

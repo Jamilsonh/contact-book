@@ -68,6 +68,7 @@
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   color: rgb(0, 0, 0);
+  border: none;
   font-size: 16px;
   cursor: pointer;
   margin: 5px;
@@ -148,7 +149,7 @@
 }
 
 .contact-button {
-  width: 130px;
+  width: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -185,6 +186,34 @@
   justify-content: center;
 }
 
-.details-button:hover {
-  background-color: rgba(255, 255, 255, 0.616);
+.button-icon {
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-remove {
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+}
+
+.button-remove {
+  color: rgb(255, 0, 0);
+  opacity: 0.8;
+}
+
+.button-remove:hover {
+  opacity: 1;
+}
+
+.button-more {
+  color: rgb(37, 223, 53);
+  opacity: 0.8;
+}
+
+.button-more:hover {
+  opacity: 1;
 }

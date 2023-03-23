@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { VscArrowLeft } from 'react-icons/vsc';
 import { Link, useParams } from 'react-router-dom';
 import './Details.css';
+import { IconContext } from 'react-icons';
 
 const Details = () => {
   const { id } = useParams();
@@ -26,29 +28,38 @@ const Details = () => {
       <div>CONTACT BOOK</div>
       <div className='details-container'>
         <div className='container-voltar'>
-          <button>
-            <Link to='/'>Voltar</Link>
-          </button>
+          <div className='arrow-icon'>
+            <IconContext.Provider
+              value={{ className: 'react-icons', size: '1.5em' }}
+            >
+              <Link to='/'>
+                <VscArrowLeft />
+              </Link>
+            </IconContext.Provider>
+          </div>
         </div>
         <div className='details-subcontainer'>
           {contacts && (
             <div className='details-card'>
-              <div className='id-dados'>
-                <div>Nome: </div>
-                <div>E-mail: </div>
-                <div>Marital Status: </div>
-                <div>Work Situation: </div>
-                <div>Genre: </div>
-              </div>
-
-              <div className='dados'>
-                <div>
-                  {filter.firstName} {filter.lastName}
+              <div className='subtitle-container'>DETAILS</div>
+              <div className='dados-container'>
+                <div className='id-dados'>
+                  <div>Nome: </div>
+                  <div>E-mail: </div>
+                  <div>Marital Status: </div>
+                  <div>Work Situation: </div>
+                  <div>Genre: </div>
                 </div>
-                <div>{filter.email} </div>
-                <div>{filter.maritalStatus}</div>
-                <div>{filter.workSituation} </div>
-                <div>{filter.genre} </div>
+
+                <div className='dados'>
+                  <div>
+                    {filter.firstName} {filter.lastName}
+                  </div>
+                  <div>{filter.email} </div>
+                  <div>{filter.maritalStatus}</div>
+                  <div>{filter.workSituation} </div>
+                  <div>{filter.genre} </div>
+                </div>
               </div>
             </div>
           )}

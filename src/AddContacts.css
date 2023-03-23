@@ -9,7 +9,7 @@
   border-radius: 5px;
   background-image: url(images/fundo.png);
   background-size: cover;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   height: 600px;
 }
 
@@ -30,7 +30,7 @@
   height: 15px;
   border-radius: 15px;
 }
- 
+
 .progress {
   background: #000000;
   width: 100px;
@@ -68,7 +68,6 @@
   width: 85%;
   height: 70px;
   margin: 10px;
-
 }
 
 .title-labels {
@@ -81,22 +80,21 @@
 }
 
 .login--input {
-	color: rgb(0, 0, 0);
-	font-size: 1.15rem;
-	width: 80%;
-	padding: .5rem 1rem;
-	border: 1px solid black;
-	outline: none;
-	border-radius: 1.5rem;
-	background-color: rgba(255, 255, 255, 0.897);
-	letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  font-size: 1.15rem;
+  width: 80%;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.897);
+  letter-spacing: 1px;
   height: 15px;
 }
 
 .login--input:focus {
   background-color: rgba(255, 255, 255, 0.301);
 }
-
 
 .select-field {
   width: 85%;
@@ -137,22 +135,26 @@
   justify-content: center;
 }
 
-.save-button {
-  width: 80%;
+.button-formulario {
+  width: 50%;
   height: 30px;
   padding: 5px;
   margin: 5px 0;
-  background-color: lightblue;
-  border: none;
-  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
   color: rgb(0, 0, 0);
   font-size: 16px;
   cursor: pointer;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
 }
 
-.save-button:disabled {
+.button-formulario:disabled {
   color: rgba(59, 55, 55, 0.418);
-  background-color: rgba(125, 137, 141, 0.733);
+  background-color: rgba(150, 150, 150, 0.733);
+  border: 2px solid rgb(126, 126, 126);
 }
-
-

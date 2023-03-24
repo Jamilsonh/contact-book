@@ -159,8 +159,8 @@ const Contacts = () => {
             onChange={(e) => setWorkSituation(e.target.value)}
           >
             <option value=''> - Select...</option>
-            <option value='Buscando Trabalho'>Looking for work</option>
-            <option value='Contratado'>Employed</option>
+            <option value='Looking for work'>Looking for work</option>
+            <option value='Employed'>Employed</option>
             <option value='Freelancer'>Freelancer</option>
           </select>
         </div>

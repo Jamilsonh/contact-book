@@ -25,7 +25,7 @@ const Details = () => {
 
   return (
     <div className='details-main'>
-      <div>CONTACT BOOK</div>
+      <div className='title-main'>CONTACT BOOK</div>
       <div className='details-container'>
         <div className='container-voltar'>
           <div className='arrow-icon'>

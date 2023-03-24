@@ -65,3 +65,13 @@
 .last-name {
   margin: 3px;
 }
+
+.title-main {
+  width: 420px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 20px;
+}

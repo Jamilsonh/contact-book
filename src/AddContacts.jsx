@@ -79,7 +79,7 @@ const Contacts = () => {
 
   return (
     <div className='app-container'>
-      <div>CONTACT BOOK</div>
+      <div className='title-main'>CONTACT BOOK</div>
       <div className='addcontacts-container'>
         <div className='progressbar-container'>
           <div className='progress-bar'>
@@ -143,9 +143,10 @@ const Contacts = () => {
             onChange={(e) => setMaritalStatus(e.target.value)}
           >
             <option value=''> - Select...</option>
-            <option value='Solteiro'>Solteiro</option>
-            <option value='Casado'>Casado</option>
-            <option value='Divorciado'>Divorciado</option>
+            <option value='Single'>Single</option>
+            <option value='Married'>Married</option>
+            <option value='Divorced'>Divorced</option>
+            <option value='Widowed'>Widowed</option>
           </select>
         </div>
 
@@ -158,9 +159,8 @@ const Contacts = () => {
             onChange={(e) => setWorkSituation(e.target.value)}
           >
             <option value=''> - Select...</option>
-            <option value='Buscando Trabalho'>Buscando Trabalho</option>
-            <option value='Contratado CLT'>Contratado CLT</option>
-            <option value='Contratado PJ'>Contratado PJ</option>
+            <option value='Buscando Trabalho'>Looking for work</option>
+            <option value='Contratado'>Employed</option>
             <option value='Freelancer'>Freelancer</option>
           </select>
         </div>
@@ -172,7 +172,7 @@ const Contacts = () => {
               <input
                 type='radio'
                 name='genre'
-                value='Masculino'
+                value='Male'
                 onChange={(e) => setGenre(e.target.value)}
                 checked={genre === 'Masculino'}
               />
@@ -182,7 +182,7 @@ const Contacts = () => {
               <input
                 type='radio'
                 name='genre'
-                value='Feminino'
+                value='Female'
                 onChange={(e) => setGenre(e.target.value)}
                 checked={genre === 'Feminino'}
               />

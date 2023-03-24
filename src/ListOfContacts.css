@@ -21,6 +21,16 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
+.title-main {
+  width: 420px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .sub-container {
     width: 330px;
@@ -89,6 +99,15 @@
   color: rgb(0, 0, 0);
   font-size: 16px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .save-button {
+    width: 30%;
+  }
+  .button-link {
+    width: 30%;
+  }
 }
 
 .contacts-list {

@@ -30,7 +30,7 @@ const ListOfContacts = () => {
 
   return (
     <div className='container-main'>
-      <div>CONTACT BOOK</div>
+      <div className='title-main'> CONTACT BOOK </div>
       <div className='sub-container'>
         <div className='buttons'>
           <Link className='button-link' to={'/addcontact'}>

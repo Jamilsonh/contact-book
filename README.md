@@ -1,5 +1,3 @@
-# localstorage
-
 # Lista de contatos
 
 Esse projeto é um lista de contatos com tela de cadastro, desenvolvi com o intuito de entender como a localstorage armazena os dados e como ela funciona.

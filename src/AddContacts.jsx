@@ -174,7 +174,7 @@ const Contacts = () => {
                 name='genre'
                 value='Male'
                 onChange={(e) => setGenre(e.target.value)}
-                checked={genre === 'Masculino'}
+                checked={genre === 'Male'}
               />
               Male
             </span>
@@ -184,7 +184,7 @@ const Contacts = () => {
                 name='genre'
                 value='Female'
                 onChange={(e) => setGenre(e.target.value)}
-                checked={genre === 'Feminino'}
+                checked={genre === 'Female'}
               />
               Female
             </span>
